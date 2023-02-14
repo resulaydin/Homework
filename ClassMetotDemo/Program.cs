@@ -7,6 +7,7 @@
             CustomerManager customerManager = new CustomerManager();
             Customer customer1 = new Customer() {Id=32,FirtName="Guest",LastName="Guests",City="Ankara" };
             Customer customer2 = new Customer() {Id=11};
+
            
             customerManager.Add(customer1);
             Console.WriteLine("Customer Guest is Listed ");
