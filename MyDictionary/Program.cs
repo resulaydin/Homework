@@ -13,7 +13,7 @@
             Console.WriteLine( dictionary.TryGetValue(5265484, out result) ); 
 
 
-            MyDictionaryList<int, string> myDictionary = new MyDictionaryList<int, string>();
+            MyDictionary<int, string> myDictionary = new MyDictionary<int, string>();
             myDictionary.Add(11165484, "Tenacious Aydın");
             myDictionary.Add(11452484, "Humanity Aydın");
             myDictionary.Add(11452486, "İnsan Aydın");
@@ -24,14 +24,14 @@
         }
     }
 
-    class MyDictionaryList<TKey, TValue>
+    class MyDictionary<TKey, TValue>
     {
         TKey[] _keys, _tempTKey;
         TValue[] _values, _tempTValue;
         object[,] objects;
         int i = 0, j = 0;
 
-        public MyDictionaryList()
+        public MyDictionary()
         {
             _keys = new TKey[0];
             _values = new TValue[0];
