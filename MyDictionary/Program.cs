@@ -114,34 +114,4 @@
         }
 
     }
-
-    class Person
-    {
-        public int TcKn { get; set; }
-        public string? FirtName { get; set; }
-        public string? LastName { get; set; }
-        public string? City { get; set; }
-    }
-
-    class PersonManager
-    {
-        List<Person> _persons;
-        public PersonManager()
-        {
-            _persons = new List<Person>
-            {
-                new Person{TcKn=1,FirtName="Adem",LastName="Adems",City="Ağrı" },
-                new Person{TcKn=1,FirtName="Human",LastName="Humans",City="Ankara" },
-                new Person{TcKn=1,FirtName="İnsan",LastName="İnsans",City="Muğla" }
-            };
-        }
-        public void Add(Person person)
-        {
-            _persons.Add(person);
-        }
-        public List<Person> GetPersons()
-        {
-            return _persons;
-        }
-    }
 }
